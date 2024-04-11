@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script type="module"></script>
+    <link rel="stylesheet" href="./index.css">
+    <title>Scatterplot Graph</title>
+</head>
+<body>
+    <svg id="canvas">
+        <text id="title" x="210" y="40">Doping in Professional Bicycle Racing</text>
+        <text id="title-description" x="290" y="70">35 Fastest times up Alpe d'Huez</text>
+        <text id="yScale-description" x="-270" y="60" transform="rotate(-90 50 90)">Time in Minutes</text>
+        <!-- Creating the legend -->
+        <text id="legend" x="715" y="350">No doping allegations</text>
+        <rect id="green" width="16px" height="16px" x="845" y="339" fill="green"></rect>
+        <text id="legend-2" x="665" y="370">Riders with doping allegations</text>
+        <rect id="orange" width="16px" height="16px" x="845" y="359" fill="darkorange"></rect>
+    </svg>
+    <div id="tooltip"></div>
+</body>
+<script src="./index.js" type="module"></script>
+<script defer src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
